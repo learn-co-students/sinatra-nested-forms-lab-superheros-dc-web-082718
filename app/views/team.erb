@@ -1,3 +1,16 @@
-
-
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><%=@name%></h1>
+    <h2>Team Motto: <%=@motto%></h2>
+    <%@super_heroes.each do |super_hero|%>
+    <h2>Hero Name: <%=super_hero[:name]%></h2>
+    <h3>Hero Power: <%=super_hero[:power]%></h3>
+    <h3>Hero Biography: <%=super_hero[:biography]%></h3>
+    <%end%>
+  </body>
+</html>
