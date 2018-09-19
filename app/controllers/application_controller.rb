@@ -14,7 +14,7 @@ class App < Sinatra::Base
 
       @members_info = params["team"]["members"]
       # binding.pry
-      redirect :super_hero
+      erb :super_hero
     end
 
 end
